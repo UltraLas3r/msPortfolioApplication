@@ -1,10 +1,11 @@
 .jumbotron{
     padding: 2rem 1rem;
-    background-color: #e9ecef;
+    background-color: #999F91;
 }
-
 
 #navButton{
     position: relative;
+    background-color: #F9F9F4;
     float: right;
+  
 }
