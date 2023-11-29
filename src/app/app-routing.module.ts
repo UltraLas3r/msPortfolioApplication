@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'portfolio', component: PortfolioComponent}, 
   {path: 'resume', component: ResumeComponent},
-  {path: 'Contact', component: ContactComponent} ];
+  {path: 'Contact', component: ContactComponent},
+{path:'**', component: HomeComponent, pathMatch: 'full'} ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
