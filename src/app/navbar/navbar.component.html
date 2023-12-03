@@ -1,17 +1,17 @@
 <nav class="navbar-expand-md border-bottom mb-3" id="navbarBackground">
     <div class="container">
         <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/home" routerLinkActive="">Home</a>
+            <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Home'}">
+                <a  class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/home" routerLinkActive="" (click)="selectedItem('Home')">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/portfolio">Portfolio</a>
+            <li class="nav-item"  [ngClass]="{'selectedItem': selectedNavBarItem === 'Portfolio'} ">
+                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/portfolio" (click)="selectedItem('Portfolio')">Portfolio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/resume">Resume</a>
+            <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Resume'}">
+                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/resume" (click)="selectedItem('Resume')" >Resume</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/contact">Contact</a>
+            <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Contact'}">
+                <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/contact" (click)="selectedItem('Contact')">Contact</a>
             </li>
         </ul>
     </div>
