@@ -5,14 +5,9 @@
          2- use double quotes then singular "''" when passing in a hardcoded string
             these tell angular that we're passing in hardcoded text and not the name of a variable. 
        -->
-      <div class="col-lg-4 col-md-6 mb-4" style ="max-width: 380px; min-width: 380px;">
+      <div *ngFor ="let project of projects" class="col-lg-4 col-md-6 mb-4" style ="max-width: 380px; min-width: 380px;">
           <app-projectcard [project] = "project"></app-projectcard> 
       </div>   
-      <div class="col-lg-4 col-md-6 mb-4" style ="max-width: 380px; min-width: 380px;">
-         <app-projectcard [project]= "project"></app-projectcard> 
-      </div>   
-      <div class="col-lg-4 col-md-6 mb-4" style ="max-width: 380px; min-width: 380px;"> 
-         <app-projectcard [project]= "project"></app-projectcard> 
-      </div>   
+       
    </div>
 </div>
