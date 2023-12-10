@@ -13,6 +13,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class PortfolioComponent implements OnInit {
    projects = {} as Project[];
    isCollapsed: boolean = true;
+   activelyFiltering: boolean = false;
     //LANGUAGES
    typescript: boolean = false;
    python: boolean = false;
@@ -86,7 +87,12 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.CUCUMBER)
     }
 
-
+    if(this.java || this.python || this.typescript || this.csharp || this.ruby || this.javascript || this.angular || this.winforms || this.react || this.aspnet || this.nodejs || this.serenity || this.cucumber){
+      this.activelyFiltering = true;
+    }
+    else{
+      this.activelyFiltering = false;
+    }
     this.projects = this.projectService.GetProjectsByFilter(filterTags);
   }
 
@@ -107,6 +113,7 @@ export class PortfolioComponent implements OnInit {
     this.dotnet = false;
     this.winforms = false;
 
+    this.activelyFiltering = false;
     this.projects = this.projectService.GetProjects();
     this.isCollapsed = true;
   }
