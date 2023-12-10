@@ -2,6 +2,7 @@
    <div class="mb-2">
       <div>
          <button class="btn btn-outline-primary mb-2 me-2" (click) = "isCollapsed = !isCollapsed">Filter</button>
+         <button class="btn btn-outline-secondary mb-2" (click) = "ResetFilters()">Reset</button>
       </div>
       <div [collapse]="isCollapsed">
          <div class="border mb-2 shadow-sm" style="width: 250px">
@@ -28,9 +29,44 @@
                               name="Java">
                            <label class="form-check-label-small">Java</label>
                         </div>
+                        <div class="form-check">
+                           <input 
+                              type="checkbox" 
+                              class="form-check-input position-static me-2"
+                              [(ngModel)] = "csharp"
+                              (change)="Filter()"
+                              name="Csharp">
+                           <label class="form-check-label-small">C#</label>
+                        </div>
+                        <div class="form-check">
+                           <input 
+                              type="checkbox" 
+                              class="form-check-input position-static me-2"
+                              [(ngModel)] = "ruby"
+                              (change)="Filter()"
+                              name="Ruby">
+                           <label class="form-check-label-small">Ruby</label>
+                        </div>
+                        <div class="form-check">
+                           <input 
+                              type="checkbox" 
+                              class="form-check-input position-static me-2"
+                              [(ngModel)] = "python"
+                              (change)="Filter()"
+                              name="Python">
+                           <label class="form-check-label-small">Python</label>
+                        </div>
+                        <div class="form-check">
+                           <input 
+                              type="checkbox" 
+                              class="form-check-input position-static me-2"
+                              [(ngModel)] = "javascript"
+                              (change)="Filter()"
+                              name="Javascript">
+                           <label class="form-check-label-small">Javascript</label>
+                        </div>
                      </div>
                   </div>
-
                <div class="col">
                   <small><b>Frameworks</b></small>
                      <div class="form-group">
@@ -42,6 +78,71 @@
                            (change)="Filter()"
                            name="Angular">
                         <label class="form-check-label-small">Angular</label>
+                     </div>
+
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "dotnet"
+                           (change)="Filter()"
+                           name="Dotnet">
+                        <label class="form-check-label-small">.NET</label>
+                     </div>
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "winforms"
+                           (change)="Filter()"
+                           name="Winform">
+                        <label class="form-check-label-small">Win Forms</label>
+                     </div>
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "nodejs"
+                           (change)="Filter()"
+                           name="NodeJS">
+                        <label class="form-check-label-small">nodeJS</label>
+                     </div>
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "react"
+                           (change)="Filter()"
+                           name="React">
+                        <label class="form-check-label-small">React</label>
+                     </div>
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "aspnet"
+                           (change)="Filter()"
+                           name="ASPnet">
+                        <label class="form-check-label-small">ASP.NET</label>
+                     </div>
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "serenity"
+                           (change)="Filter()"
+                           name="Serenity">
+                        <label class="form-check-label-small">Serenity</label>
+                     </div>
+
+                     <div class="form-check">
+                        <input 
+                           type="checkbox" 
+                           class="form-check-input position-static me-2"
+                           [(ngModel)] = "cucumber"
+                           (change)="Filter()"
+                           name="Cucumber">
+                        <label class="form-check-label-small">Cucumber</label>
                      </div>
                   </div>
                </div>

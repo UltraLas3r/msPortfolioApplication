@@ -27,6 +27,8 @@ export class PortfolioComponent implements OnInit {
    react: boolean = false;
    nodejs: boolean = false;
    aspnet: boolean = false;
+   dotnet: boolean = false;
+   winforms: boolean = false;
 
 
   constructor(private titleService: Title, private projectService: ProjectsService){
@@ -46,6 +48,9 @@ export class PortfolioComponent implements OnInit {
     if(this.csharp){
       filterTags.push(Tag.CSHARP)
     }
+    if(this.dotnet){
+      filterTags.push(Tag.DOTNET)
+    }
     if(this.python){
       filterTags.push(Tag.PYTHON)
     }
@@ -61,6 +66,9 @@ export class PortfolioComponent implements OnInit {
 
     if(this.angular){
       filterTags.push(Tag.ANGULAR)
+    }
+    if(this.winforms){
+      filterTags.push(Tag.WINFORMS)
     }
     if(this.react){
       filterTags.push(Tag.REACT)
@@ -82,6 +90,26 @@ export class PortfolioComponent implements OnInit {
     this.projects = this.projectService.GetProjectsByFilter(filterTags);
   }
 
+  ResetFilters(){
+    this.typescript = false;
+    this.python = false;
+    this.csharp= false;
+    this.javascript = false;
+    this.java = false;
+    this.ruby = false;
+    //FRAMEWORKS
+    this.angular = false;
+    this.serenity = false;
+    this.cucumber= false;
+    this.react = false;
+    this.nodejs = false;
+    this.aspnet = false;
+    this.dotnet = false;
+    this.winforms = false;
+
+    this.projects = this.projectService.GetProjects();
+    this.isCollapsed = true;
+  }
 
 
 }
