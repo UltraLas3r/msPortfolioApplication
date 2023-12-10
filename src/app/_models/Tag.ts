@@ -13,6 +13,8 @@ export class Tag{
     static readonly REACT = new Tag('React', '#0D7CA1');
     static readonly ASPNET = new Tag('ASPnet', '#55917F');
     static readonly JAVASCRIPT = new Tag('Javascript', '#F6B234');
+    static readonly SERENITY = new Tag('Serenity', '#2DB78F');
+    static readonly CUCUMBER = new Tag('Cucumber', '#15AA2A');
 
 
 
