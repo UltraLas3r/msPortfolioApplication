@@ -9,3 +9,11 @@
     background-color: blue;
     color: white;
 }
+
+.pill-shaped {
+    display: inline-block;
+    padding: 5px 20px 5px 20px ; /* Adjust padding as needed */
+    margin: 5px 5px 5px 5px;
+    border-radius: 75px; /* Use a value equal to half of the element's height to create a pill shape */
+  }
+  
