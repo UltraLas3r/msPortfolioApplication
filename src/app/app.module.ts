@@ -40,7 +40,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     FormsModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
