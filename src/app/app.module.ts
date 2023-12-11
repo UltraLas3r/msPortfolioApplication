@@ -17,7 +17,6 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AccordionModule } from 'ngx-bootstrap/Accordion';
 
 
 
@@ -40,7 +39,6 @@ import { AccordionModule } from 'ngx-bootstrap/Accordion';
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    AccordionModule.forRoot(),
     FormsModule,
     NgbModule
   ],
