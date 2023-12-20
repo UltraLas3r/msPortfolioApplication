@@ -1,3 +1,19 @@
-#btn-click{
+accordion-group::ng-deep .btn-link{
+    color:white;
+
+}
+
+accordion-group::ng-deep .card-header{
+    background-color:#007bff;
+    
+}
+
+#accordionDropdownIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid white; /* Border color */
+    border-radius: 50%; /* Makes the border round */
     
 }

@@ -8,6 +8,12 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
+   isWorkExperienceOpen = false;
+   isEducationOpen = false;
+   isCertificationsOpen = false;
+   isSkillsOpen = false;
+
+
   constructor(private titleService: Title, private renderer: Renderer2){
     this.titleService.setTitle('Michael Schreiber - Resume');
    }

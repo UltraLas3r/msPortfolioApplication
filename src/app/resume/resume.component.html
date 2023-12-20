@@ -1,14 +1,113 @@
 <div class="container text-center">
     <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border pill-shaped">Download PDF Resume</button>
 
-     <!-- <accordion>
-        <accordion-group heading="Work Experience">      </accordion-group>
-        <accordion-group heading="Education">
-        </accordion-group>
-        <accordion-group heading="Skills">
-        </accordion-group>
-        <accordion-group heading="Certifications">
-        </accordion-group>
-    </accordion>  -->
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class ="btn-link"> Work Experience </div>
+
+                    <div style="width: 10.95px">
+                        <div *ngIf="!isWorkExperienceOpen" style="color:white" id="accordionDropdownIcon">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color:white" id="accordionDropdownIcon">v</div>
+                    </div>
+                </button>   
+
+                <div style="text-align: left">
+                    <h2 class="mb-0">Software Engineer in Test</h2>
+                    <h3 class="text-primary"> ITS Logistics LLC</h3>
+                <ul>
+                    <li>quis Mauris sit malesuada gf's saved fringilla enim turpis,</li>
+                    <li>at mi kitties ham. Venenatis belly cat et boy bat dang saved nulla other porta ipsum mi chilling cat spoon tellus.</li>  
+                    <li> Aliquet sapien Sed grandparents home, waffles congue amused lacinia ac headbutt siamese here. Curabitur girlfriend boy, family quam photobomb lady ham i</li>
+                </ul>  
+              </div>  
+    
+              <div style="text-align: left">
+                <h2 class="mb-0">Software Engineer Intern</h2>
+                <h3 class="text-primary">Bearplane LLC</h3>
+            <ul>
+                <li>quis Mauris sit malesuada gf's saved fringilla enim turpis,</li>
+                <li>at mi kitties ham. Venenatis belly cat et boy bat dang saved nulla other porta ipsum mi chilling cat spoon tellus.</li>  
+                <li> Aliquet sapien Sed grandparents home, waffles congue amused lacinia ac headbutt siamese here. Curabitur girlfriend boy, family quam photobomb lady ham i</li>
+            </ul>  
+          </div>  
+        
+            </accordion-group> 
+                <accordion-group [(isOpen)]="isEducationOpen">
+                    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                        <div style="visibility: hidden;">></div>
+                        <div class ="btn-link"> Education </div>
+    
+                        <div style="width: 10.95px">
+                            <div *ngIf="!isEducationOpen" style="color:white" id="accordionDropdownIcon">></div>
+                            <div *ngIf="isEducationOpen" style="color:white" id="accordionDropdownIcon">v</div>
+                        </div>
+                    </button>
+                <div style="text-align: left">
+                    <h2 class="mb-0">Western Governors University</h2>
+                    <h3 class="text-primary">school stuff??</h3>
+                <ul>
+                    <li>quis Mauris sit malesuada gf's saved fringilla enim turpis,</li>
+                    <li>at mi kitties ham. Venenatis belly cat et boy bat dang saved nulla other porta ipsum mi chilling cat spoon tellus.</li>  
+                    <li> Aliquet sapien Sed grandparents home, waffles congue amused lacinia ac headbutt siamese here. Curabitur girlfriend boy, family quam photobomb lady ham i</li>
+                </ul>  
+              </div>  
+    
+            </accordion-group> 
+                <accordion-group [(isOpen)]="isSkillsOpen">
+                    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                        <div style="visibility: hidden;">></div>
+                        <div class ="btn-link"> Skills </div>
+    
+                        <div style="width: 10.95px">
+                            <div *ngIf="!isSkillsOpen" style="color:white" id="accordionDropdownIcon">></div>
+                            <div *ngIf="isSkillsOpen" style="color:white" id="accordionDropdownIcon">v</div>
+                        </div>
+                    </button>
+                <div style="text-align: left">
+                    <h2 class="mb-0"> Development skillz</h2>
+                    <h3 class="text-primary">programming languages</h3>
+                <ul>
+                    <li>quis Mauris sit malesuada gf's saved fringilla enim turpis,</li>
+                    <li>at mi kitties ham. Venenatis belly cat et boy bat dang saved nulla other porta ipsum mi chilling cat spoon tellus.</li>  
+                    <li> Aliquet sapien Sed grandparents home, waffles congue amused lacinia ac headbutt siamese here. Curabitur girlfriend boy, family quam photobomb lady ham i</li>
+                </ul> 
+                <h3>Programming Frameworks</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> 
+                <h3>Other skills</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> 
+                </div>    
+    
+            </accordion-group> 
+                <accordion-group [(isOpen)]="isCertificationsOpen">
+                    <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                        <div style="visibility: hidden;">></div>
+                        <div class ="btn-link"> Certifications </div>
+    
+                        <div style="width: 10.95px">
+                            <div *ngIf="!isCertificationsOpen" style="color:white" id="accordionDropdownIcon">></div>
+                            <div *ngIf="isCertificationsOpen" style="color:white" id="accordionDropdownIcon">v</div>
+                        </div>
+                    </button> 
+                <div style="text-align: left">
+                    <h2 class="mb-0">certs like A+ Project+ etc..</h2>
+                   
+                
+              </div>  
+            </accordion-group>
+        </accordion> 
+
+    </div>
+     
 
 </div>
