@@ -3,19 +3,19 @@
         <ul class="nav justify-content-center">
             <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Home'}">
                 <a class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/home" routerLinkActive="" 
-                (click)="selectedItem('Home');" [ngStyle]="{'background-color': selectedNavBarItem === 'Home' ? 'white' : backgroundColor}">Home</a>
+                (click)="selectedItem('Home');" [ngStyle]="{'background-color': selectedNavBarItem === 'Home' ? '#707C88' : backgroundColor}">Home</a>
             </li>
             <li class="nav-item"  [ngClass]="{'selectedItem': selectedNavBarItem === 'Portfolio'} ">
                 <a  class="nav-link text-secondary" id="navbarTab" class="pill-shaped" routerLink="/portfolio" 
-                (click)="selectedItem('Portfolio');" [ngStyle]="{'background-color': selectedNavBarItem === 'Portfolio' ? 'white' : backgroundColor}">Portfolio</a>
+                (click)="selectedItem('Portfolio');" [ngStyle]="{'background-color': selectedNavBarItem === 'Portfolio' ? '#707C88' : backgroundColor}">Portfolio</a>
             </li>
             <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Resume'}">
                 <a  class="nav-link text-secondary"  id="navbarTab" class="pill-shaped" routerLink="/resume" 
-                (click)="selectedItem('Resume');" [ngStyle]="{'background-color': selectedNavBarItem === 'Resume' ? 'white' : backgroundColor}">Resume</a>
+                (click)="selectedItem('Resume');" [ngStyle]="{'background-color': selectedNavBarItem === 'Resume' ? '#707C88' : backgroundColor}">Resume</a>
             </li>
             <li class="nav-item" [ngClass]="{'selectedItem': selectedNavBarItem === 'Contact'}">
                 <a [ngStyle]="{'background-color': backgroundColor}" class="nav-link text-secondary"  id="navbarTab" class="pill-shaped" routerLink="/contact" 
-                (click)="selectedItem('Contact');" [ngStyle]="{'background-color': selectedNavBarItem === 'Contact' ? 'white' : backgroundColor}">Contact</a>
+                (click)="selectedItem('Contact');" [ngStyle]="{'background-color': selectedNavBarItem === 'Contact' ? '#707C88' : backgroundColor}">Contact</a>
             </li>
         </ul>
     </div>
