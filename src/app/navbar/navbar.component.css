@@ -1,18 +1,10 @@
 #navbarTab{
-    background-color: #019DE0;
+    background-color: #C2CAE5;
     font-weight: bold;
-    color: black;
+    color: #FF3366;
 }
 
-.nav-item.selectedItem {
-    background-color: #091A28;
-    font-weight: bold;
-    color: black;
-}
-
-#navbarBackground{
-    background-color: #091A28;
-}
+/* when selected use #202A46 */
 
 .pill-shaped {
     display: inline-block;
@@ -20,5 +12,6 @@
     margin: 5px 5px 5px 5px;
     border-radius: 75px; /* Use a value equal to half of the element's height to create a pill shape */
   }
+
 
 
