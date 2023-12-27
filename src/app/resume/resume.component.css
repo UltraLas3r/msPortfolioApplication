@@ -4,7 +4,7 @@ accordion-group::ng-deep .btn-link{
 }
 
 accordion-group::ng-deep .card-header{
-    background-color:#363636;
+    background-color:#707c88;
     
 }
 
@@ -13,7 +13,7 @@ accordion-group::ng-deep .card-header{
     width: 30px;
     height: 30px;
     text-align: center;
-    border: 2px solid white; /* Border color */
+    border: 2px solid #ff3366; /* Border color */
     border-radius: 50%; /* Makes the border round */
     
 }

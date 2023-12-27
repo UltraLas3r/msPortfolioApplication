@@ -10,7 +10,7 @@ export class ProjectsService {
   
   projects: Project[] = [
     {id: 0, name: "Inventory Management Application", 
-      pictures: ["../../assets/img1.png","../../assets/img2.png","../../assets/img3.png"], 
+      pictures: ["../../assets/project images/c968-addPart.png","../../assets/project images/c968-addPartWithValidation.png","../../assets/c968-home", "../../assets/c968-home.png", "../../assets/c968-modifyProduct.png"], 
       projectLink: "//www.github.com", 
       summary: "A fullstack inventory management tool for organizing and sorting items and data. Uses C# for back-end design, Windows Forms for front-end design and MySql for a database service. ", 
       description: "C# application built in Visual Studio. Uses MySql for data storage and ", 
